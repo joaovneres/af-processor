@@ -1,0 +1,75 @@
+# Manual de Execução do Programa
+
+Este programa consiste em um arquivo executável chamado main.exe, que processa um arquivo de entrada seguindo o formato fornecido no enunciado e gera um arquivo de saída. Siga as instruções abaixo para garantir o funcionamento correto.
+
+## Pré-requisitos
+
+1. Faça o download do arquivo main.exe e o coloque em uma pasta do seu computador.
+2. Certifique-se de que o arquivo de entrada chamado entrada.txt esteja no mesmo diretório que o main.exe e siga o formato definido no enunciado.
+
+## Executando o programa com um duplo clique
+
+1. Navegue até a pasta onde o main.exe está localizado.
+2. Caso haja um arquivo entrada.txt válido no mesmo diretório, ao dar um duplo clique no main.exe, ele processará o arquivo e gerará um arquivo de saída chamado saida.txt na mesma pasta.
+   
+Observação: Se o arquivo entrada.txt não estiver presente ou estiver mal formatado, o programa falhará silenciosamente. Para ver os erros e detalhes, siga as instruções abaixo para executar o programa via terminal.
+
+## Executando o programa via CMD (Prompt de Comando)
+
+1. Abra o CMD (Prompt de Comando).
+   - Para abrir, pressione `Win + R`, digite `cmd` e pressione `Enter`.
+2. Navegue até o diretório onde o main.exe está localizado, utilizando o comando `cd`:
+   
+   cd caminho\para\a\pasta
+
+3. Execute o main.exe. Existem duas formas principais de execução:
+   - Com o arquivo de entrada padrão:
+     
+     main.exe
+     
+     Isso usará o entrada.txt como entrada e gerará o arquivo saida.txt.
+   
+   - Especificando arquivos de entrada e saída:
+     
+     main.exe entrada1.txt saida1.txt
+     
+     Isso lerá o arquivo entrada1.txt e criará um arquivo saida1.txt no mesmo diretório.
+
+4. Se houver algum erro (por exemplo, arquivo de entrada mal formatado ou inexistente), o erro será exibido no terminal.
+
+## Executando o programa via PowerShell
+
+1. Abra o PowerShell.
+   - Para abrir, pressione `Win + X` e selecione Windows PowerShell.
+   
+2. Navegue até o diretório onde o main.exe está localizado, utilizando o comando `cd`:
+   
+   cd caminho\para\a\pasta
+  
+3. Execute o main.exe:
+   - Com o arquivo de entrada padrão:
+     
+     .\main.exe
+     
+     Isso usará o entrada.txt como entrada e gerará o arquivo saida.txt.
+   
+   - Especificando arquivos de entrada e saída:
+     
+     .\main.exe entrada1.txt saida1.txt
+
+     Isso lerá o arquivo entrada1.txt e criará um arquivo saida1.txt.
+
+4. Caso ocorra algum erro, o PowerShell exibirá as mensagens detalhadas no terminal.
+
+## Parâmetros Opcionais
+
+- Se você fornecer apenas o arquivo de entrada como parâmetro, o programa utilizará o nome padrão saida.txt para o arquivo de saída:
+  
+  main.exe entrada1.txt
+  
+- Caso deseje visualizar logs e mensagens de erro, é altamente recomendado executar o main.exe através do CMD ou PowerShell, como descrito acima.
+
+## Informações Adicionais
+
+- Certifique-se de que os arquivos de entrada estejam no formato correto, conforme definido no enunciado do trabalho.
+- O arquivo de saída será sobrescrito se já existir, portanto, se deseja manter cópias anteriores, utilize um nome de arquivo de saída personalizado.
